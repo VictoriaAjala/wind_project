@@ -3,6 +3,13 @@ import { useState } from "react"
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Login from "./components/Login"
 import Dashboard from "./components/Dashboard";
+import Product from "./components/Product"
+import Orders from "./components/Orders"
+import Users from "./components/Orders"
+import Banner from "./components/Banner"
+import Revenue from "./components/Revenue"
+import Settings from "./components/Settings"
+import Logout from "./components/Logout"
 
 
 function App() {
@@ -26,7 +33,7 @@ function App() {
                     )
                 }
                 />
-                <Route path="dashboard" element={
+                <Route path="/dashboard" element={
                     loggedIn ? (
                         <Dashboard />
                     ) : (
@@ -34,7 +41,14 @@ function App() {
                     )
                 }
                 />
-                </Routes>
+            <Route  path="/product" element={<Product />} />
+          <Route  path="/orders" element={<Orders />} />
+          <Route  path="/users" element={<Users />} />
+          <Route  path="/banner" element={<Banner />} />
+          <Route  path="/revenue" element={<Revenue />} />
+          <Route  path="/settings" element={<Settings />} />
+          <Route  path="/logout" element={<Logout />} />
+          </Routes>
             </div>
         </Router>
     )
