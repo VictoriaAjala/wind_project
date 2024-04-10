@@ -19,11 +19,16 @@ const handleLogin = (e) => {
     <div className='relative w-full h-screen'>
 
       <div className='flex justify-center flex-col items-center h-full px-6 py-12'>
-        <form className='max-w-[500px] w-full max-h-[600px] mx-auto bg-white border shadow-lg rounded-md shadow-gray-400 p-14' onSubmit={handleLogin}>
+        <form className='max-w-[500px] w-full max-h-[600px] mx-auto bg-white border shadow-lg rounded-md pt-[35px] shadow-gray-400 p-14' onSubmit={handleLogin}>
 
-          <img src={Logo} alt='Neon Logo' className='justify-center mx-auto w-[150px]' />
+          <img src={Logo} alt='Neon Logo' className='justify-center mx-auto w-[130px]' />
+          <div>
+            <h1 className="justify-center text-center text-2xl font-bold">
+            Neon Pad
+            </h1>
+          </div>
 
-          <div className='mt-12'>
+          <div className='mt-12 text-lg'>
             <label>Email:</label>
             <input 
             type='text'
@@ -34,7 +39,7 @@ const handleLogin = (e) => {
             />
           </div>
 
-          <div className='mt-8'>
+          <div className='mt-8 text-lg'>
             <label>Password:</label>
             <input
             type='password'
@@ -47,7 +52,7 @@ const handleLogin = (e) => {
           </div>
           <button
           type='submit'
-          className='w-full mt-4 px-4 py-2 bg-blue-900 text-white rounded-md hover:bg-blue-950 focus:outline-none focus:bg-blue-700'
+          className='w-full mt-4 px-4 py-2 bg-blue-900 text-white text-lg rounded-md hover:bg-blue-950 focus:outline-none focus:bg-blue-700'
           >
             Login
           </button>
