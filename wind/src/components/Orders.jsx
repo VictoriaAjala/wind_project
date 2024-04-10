@@ -1,7 +1,10 @@
 import React from 'react'
+import Layout from './shared/Layout'
 
 export default function Orders() {
   return (
-    <div>Orders</div>
+    <div>
+      <Layout />
+    </div>
   )
 }
