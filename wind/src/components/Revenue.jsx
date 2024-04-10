@@ -1,7 +1,10 @@
 import React from 'react'
+import Layout from './shared/Layout'
 
 export default function Revenue() {
   return (
-    <div>Revenue</div>
+    <div>
+      <Layout />
+    </div>
   )
 }
