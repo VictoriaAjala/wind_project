@@ -1,4 +1,4 @@
-import { FiHome, FiBox, FiShoppingCart, FiDatabase, FiUsers, FiMessageSquare, FiSettings, FiTrendingUp } from "react-icons/fi";
+import { FiHome, FiBox, FiShoppingCart, FiDatabase, FiUsers, FiSettings, FiTrendingUp } from "react-icons/fi";
 import { BiLogOut } from "react-icons/bi";
 
 export const Dashboard_sidebar_links = [
@@ -25,12 +25,6 @@ export const Dashboard_sidebar_links = [
         label: 'Users',
         path: '/users',
         icon: <FiUsers />
-    },
-    {
-        key: 'messages',
-        label: 'Messages',
-        path: '/messages',
-        icon: <FiMessageSquare />
     },
     {
         key: 'banner',
