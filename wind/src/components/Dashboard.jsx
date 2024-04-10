@@ -1,7 +1,10 @@
 import React from 'react'
+import Layout from './shared/Layout'
 
 export default function Dashboard() {
   return (
-    <div>Dashboard</div>
+    <div>
+      <Layout />
+    </div>
   )
 }
