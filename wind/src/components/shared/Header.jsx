@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { FiSearch, FiBell } from 'react-icons/fi'
 import { BiMessageDots } from "react-icons/bi";
-import { Popover, Transition } from '@headlessui/react'
+import { Menu, Popover, Transition } from '@headlessui/react'
 import classNames from 'classnames';
 
 export default function Header() {
@@ -63,14 +63,23 @@ export default function Header() {
                       >
                         <Popover.Panel className="absolute right-0 z-10 mt-2.5 w-80">
                           <div className='bg-white rounded-sm shadow-md ring-1 ring-black ring-opacity-5 px-2 py-2.5'>
-                            <strong className='text-gray-700 font-medium'>Messages</strong>
-                            <div className='nt-2 py-1 text-sm'>This is massages panel.</div>
+                            <strong className='text-gray-700 font-medium'>Notification</strong>
+                            <div className='nt-2 py-1 text-sm'>This is notifications panel.</div>
                           </div>
                         </Popover.Panel>
                       </Transition>
               </>
             )}
           </Popover>
+          <Menu as="div" className="relative inline-block text-left">
+            <div>
+              <Menu.Button className="inline-flex w-full justify-center rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                <div>
+                  <span>Jan Doe</span>
+                </div>
+              </Menu.Button>
+            </div>
+          </Menu>
         </div>
     </div>
   )
