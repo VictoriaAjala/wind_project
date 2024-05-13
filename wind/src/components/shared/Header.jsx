@@ -71,11 +71,12 @@ export default function Header() {
               </>
             )}
           </Popover>
-          <Menu as="div" className="relative inline-block text-left">
+          <Menu as="div" className="relative">
             <div>
-              <Menu.Button className="inline-flex w-full justify-center rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-                <div>
-                  <span>Jan Doe</span>
+              <Menu.Button className="ml-2 inline-flex rounded-full focus:outline-none focus:ring-2 focus:ring-neutral-400">
+                <span className='sr-only'>Open user menu</span>
+                <div className='h-10 w-10 rounded-full bg-sky-500 bg-cover bg-no-repeat bg-center' style={{backgroundImage: 'url("https://source.unsplash.com/80x80?face")'}}>
+                  <span className='sr-only'>Jan Doe</span>
                 </div>
               </Menu.Button>
             </div>
