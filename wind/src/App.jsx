@@ -42,7 +42,7 @@ function App() {
                     )
                 }
                 />
-          <Route  path="/dashboard" element={<Dashboard />} />
+
           <Route  path="/product" element={<Product />} />
           <Route  path="/orders" element={<Orders />} />
           <Route  path="/users" element={<Users />} />
