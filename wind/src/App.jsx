@@ -34,16 +34,17 @@ function App() {
                     )
                 }
                 />
-                <Route path="/dashboard" element={
+                {/* <Route path="/dashboard" element={
                     loggedIn ? (
                         <Dashboard />
                     ) : (
                         <Navigate to='/' />
                     )
                 }
-                />
+                /> */}
 
           <Route  path="/product" element={<Product />} />
+          <Route  path="/dashboard" element={<Dashboard />} />
           <Route  path="/orders" element={<Orders />} />
           <Route  path="/users" element={<Users />} />
           <Route  path="/banner" element={<Banner />} />
