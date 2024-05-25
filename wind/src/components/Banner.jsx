@@ -4,7 +4,7 @@ import Layout from './shared/Layout'
 export default function Banner() {
   return (
     <div>
-      {/* <Layout /> */}
+      <Layout />
     </div>
   )
 }
