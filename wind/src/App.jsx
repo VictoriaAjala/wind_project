@@ -10,7 +10,6 @@ import Banner from "./components/Banner"
 import Revenue from "./components/Revenue"
 import Settings from "./components/Settings"
 import Logout from "./components/Logout"
-import Layout from "./components/shared/Layout";
 
 
 function App() {
